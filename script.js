@@ -507,12 +507,12 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const tourBookingLinks = {
-    mawsynram: "https://wa.me/911234567890?text=Hello%20Comfort%20Travels!%20I%20am%20interested%20in%20the%203%20Nights%204%20Days%20Mawsynram%20Tour%20Package.%20Please%20provide%20booking%20details.",
-    nartiang: "https://wa.me/911234567890?text=Hello%20Comfort%20Travels!%20I%20am%20interested%20in%20the%203%20Nights%204%20Days%20Nartiang%20Tour%20Package.%20Please%20provide%20booking%20details.",
-    arunachal: "https://wa.me/911234567890?text=Hello%20Comfort%20Travels!%20I%20am%20interested%20in%20the%206%20Nights%207%20Days%20Arunachal%20Pradesh%20Tour%20(Dirang%20%E2%80%93%20Tawang).%20Please%20provide%20booking%20details.",
-    "northeast-kaziranga": "https://wa.me/911234567890?text=Hello%20Comfort%20Travels!%20I%20am%20interested%20in%20the%205%20Nights%206%20Days%20North%20East%20Tour.%20Please%20provide%20booking%20details.",
-    meghalaya: "https://wa.me/911234567890?text=Hello%20Comfort%20Travels!%20I%20am%20interested%20in%20the%203%20Nights%204%20Days%20Meghalaya%20Tour.%20Please%20provide%20booking%20details.",
-    "northeast-shillong": "https://wa.me/911234567890?text=Hello%20Comfort%20Travels!%20I%20am%20interested%20in%20the%202%20Nights%203%20Days%20North%20East%20Tour.%20Please%20provide%20booking%20details."
+    mawsynram: "https://wa.me/919612763725?text=Hello%20Comfort%20Travels!%20I%20am%20interested%20in%20the%203%20Nights%204%20Days%20Mawsynram%20Tour%20Package.%20Please%20provide%20booking%20details.",
+    nartiang: "https://wa.me/919612763725?text=Hello%20Comfort%20Travels!%20I%20am%20interested%20in%20the%203%20Nights%204%20Days%20Nartiang%20Tour%20Package.%20Please%20provide%20booking%20details.",
+    arunachal: "https://wa.me/919612763725?text=Hello%20Comfort%20Travels!%20I%20am%20interested%20in%20the%206%20Nights%207%20Days%20Arunachal%20Pradesh%20Tour%20(Dirang%20%E2%80%93%20Tawang).%20Please%20provide%20booking%20details.",
+    "northeast-kaziranga": "https://wa.me/919612763725?text=Hello%20Comfort%20Travels!%20I%20am%20interested%20in%20the%205%20Nights%206%20Days%20North%20East%20Tour.%20Please%20provide%20booking%20details.",
+    meghalaya: "https://wa.me/919612763725?text=Hello%20Comfort%20Travels!%20I%20am%20interested%20in%20the%203%20Nights%204%20Days%20Meghalaya%20Tour.%20Please%20provide%20booking%20details.",
+    "northeast-shillong": "https://wa.me/919612763725?text=Hello%20Comfort%20Travels!%20I%20am%20interested%20in%20the%202%20Nights%203%20Days%20North%20East%20Tour.%20Please%20provide%20booking%20details."
   };
 
   function renderTourDetailsHtml(tourId, bookNowUrl) {
@@ -529,7 +529,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </a>
         </div>
         <div class="modal-footer">
-          <p>✨ Your gateway to Northeast India's beauty - Comfort Travels</p>
+          <p>✨ Your gateway to Northeast India's beauty - Travel Bug</p>
         </div>
       </div>
     `;
