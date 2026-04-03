@@ -529,7 +529,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </a>
         </div>
         <div class="modal-footer">
-          <p>✨ Your gateway to Northeast India's beauty - Travel Bug</p>
+          <p>✨ Your gateway to Northeast India's beauty - Travel Bug NE</p>
         </div>
       </div>
     `;
