@@ -36,6 +36,21 @@ nav .container {
     font-weight: bold;
     color: #D4AF37;
     letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 72px;
+    width: auto;
+    object-fit: contain;
+    max-width: 260px;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 50px;
+        max-width: 180px;
+    }
 }
 .nav-links {
     display: flex;
@@ -611,17 +626,30 @@ footer {
     .nav-links {
         position: absolute;
         right: 0;
-        top: 100%;a1a1a;
+        top: 100%;
         width: 100%;
         flex-direction: column;
         text-align: center;
         transform: translateX(100%);
         transition: transform 0.3s;
-        border-top: 2px solid #D4AF37);
-        transition: transform 0.3s;
+        border-top: 2px solid #D4AF37;
+        background: rgba(26, 26, 26, 0.98);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        z-index: 999;
     }
     .nav-links.active {
         transform: translateX(0);
+    }
+    .nav-links a {
+        display: block;
+        color: #ffffff;
+        padding: 0.9rem 1rem;
+        border-bottom: 1px solid rgba(212,175,55,0.2);
+    }
+    .nav-links a:hover {
+        background: rgba(212,175,55,0.2);
+        color: #D4AF37;
     }
     .nav-links li {
         margin: 1rem 0;
