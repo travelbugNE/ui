@@ -1,6 +1,6 @@
-# Comfort Travels Website 🌏✈️
+# Travel Bug Website 🌏✈️
 
-A modern, responsive static website for **Comfort Travels**, a travel agency specializing in car rentals, tour packages, and personalized travel solutions across Northeast India's seven sister states. Built with pure **HTML, CSS, and JavaScript**, featuring WhatsApp integration for direct enquiries and a comprehensive gallery of local destinations.
+A modern, responsive static website for **Travel Bug**, a travel agency specializing in car rentals, tour packages, and personalized travel solutions across Northeast India's seven sister states. Built with pure **HTML, CSS, and JavaScript**, featuring WhatsApp integration for direct enquiries and a comprehensive gallery of local destinations.
 
 ---
 
@@ -61,9 +61,9 @@ ComfortTravels/
 ---
 
 ## 📞 Contact
-For enquiries or customizations, contact Comfort Travels via WhatsApp or the website contact form.
+For enquiries or customizations, contact Travel Bug via WhatsApp or the website contact form.
 
 ---
 
-*Built for Comfort Travels - Your gateway to Northeast India.*
+*Built for Travel Bug - Your gateway to Northeast India.*
 
