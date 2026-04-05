@@ -26,16 +26,14 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
 });
 document.addEventListener("DOMContentLoaded", () => {
   const images = [
+    "asset/meghalaya/meghalayahill.jpg",
     "asset/SevenSisterFalls.png",
-    "asset/Kaziranga1.png",
-    "asset/Kaziranga2.png",
-    "asset/Tawang.png",
-    "asset/Cherrapunji.png",
-    "asset/Mawlynnong.png",
-    "asset/Shillong.jpg",
-    "asset/Sunset.png",
-    "asset/Shillong3.jpg",
-    "asset/WeiSawdong.jpg",
+    "asset/assam0012.jpg",
+    "asset/tawang/tawang008.jpg",
+    "asset/meghalaya/meghalayafall2.jpg",
+    "asset/tawang/tawang005.jpg",
+    "asset/tawang/TawangVillage2.jpg",
+    "asset/meghalaya/WeiSawDong1.jpg",
   ];
 
   const hero = document.querySelector(".hero");
@@ -403,17 +401,17 @@ document.addEventListener("DOMContentLoaded", () => {
         `
       },
       meghalaya: {
-        title: '3 Nights / 4 Days Meghalaya Tour (Shillong – Cherrapunjee – Mawlynnong – Dawki)',
+        title: '4 Days / 5 Nights Meghalaya Tour (Shillong – Cherrapunjee – Mawlynnong – Dawki)',
         image: 'asset/Mawlynnong.png',
         itinerary: `
           <h3>Tour Highlights</h3>
           <ul>
-            <li>Umiam Lake (Barapani) - Beautiful reservoir</li>
-            <li>Elephant Falls - Scenic waterfall</li>
-            <li>Shillong Peak - Panoramic views</li>
-            <li>Cherrapunjee - Wettest place on Earth</li>
-            <li>Mawlynnong - Asia's cleanest village</li>
+            <li>Umiam Lake – Beautiful Reservoir Lake</li>
+            <li>Sohra (Cherrapunjee)- Waterfalls &amp; Caves</li>
+            <li>Dawki – Crystal clear water</li>
+            <li>Mawlynnong – Asia’s cleanest village</li>
             <li>Dawki River - Crystal clear waters</li>
+            <li>Laitlum Canyons – Deep Valleys and misty clouds</li>            
           </ul>
           
           <h3>Detailed Itinerary</h3>
