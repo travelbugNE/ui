@@ -26,12 +26,12 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
 });
 document.addEventListener("DOMContentLoaded", () => {
   const images = [    
-        
-    "asset/meghalaya/SevenSisterFalls.png",
-    "asset/meghalaya/meghalayafall2.jpg", 
+    "asset/meghalaya/sevensisters.jpg",
+    "asset/meghalaya/meghalayafall2.jpg",
     "asset/meghalaya/meghalayafall1.jpg",
     "asset/meghalaya/meghalayahill.jpg", 
     "asset/meghalaya/landcloud.jpg",
+    "asset/meghalaya/SevenSisterFalls.png",
     "asset/assam/KazirangaNationalPark.jpg", 
     "asset/assam/brahmaputra2.jpg",  
     "asset/tawang/TawangVillage2.jpg",
@@ -262,7 +262,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const tourData = {
       meghalaya: {
-        title: 'Meghalaya Shillong, Sohra (Cherrapunjee), Dawki and Mawlynnong (4 DAYS/ 5 NIGHTS)',
+        title: 'Meghalaya Shillong, Sohra (Cherrapunjee), Dawki and Mawlynnong (5 Days / 4 Nights)',
         image: 'asset/meghalaya/meghalayahill.jpg',
         itinerary: `
           <h3>Tour Highlights</h3>
@@ -321,7 +321,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `
       },
       assam: {
-        title: 'Assam Guwahati, Kamakhya Temple, Kaziranga National Park And Manjuli Island (4 Days/ 5 Nights)',
+        title: 'Assam Guwahati, Kamakhya Temple, Kaziranga National Park And Manjuli Island (5 Days / 4 Nights)',
         image: 'asset/assam/KazirangaNationalPark.jpg',
         itinerary: `
           <h3>Tour Highlights</h3>
@@ -378,8 +378,8 @@ document.addEventListener("DOMContentLoaded", () => {
         `
       },
       'assam-meghalaya': {
-        title: 'Assam &amp; Meghalaya (4 Nights/ 5 Days)',
-        image: 'asset/meghalaya/nongjrong-village-above-cloud.jpg',
+        title: 'Assam &amp; Meghalaya (5 Days / 4 Nights)',
+        image: 'asset/meghalaya/sevensisters.jpg',
         itinerary: `
           <h3>Tour Highlights</h3>
           <ul>
