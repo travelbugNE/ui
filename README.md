@@ -12,7 +12,7 @@ A modern, responsive static website for **Travel Bug North East**, a travel agen
 - **Services**: Showcase of travel services including car rentals and tour packages.
 - **Destinations**: Highlighted destinations across Northeast India with direct WhatsApp enquiry buttons.
 - **Vehicles**: Fleet information with specifications.
-- **Gallery**: Responsive image gallery featuring 16 local assets of destinations and services.
+- **Gallery**: Responsive image gallery featuring local assets of destinations and services.
 - **Testimonials**: Customer reviews with improved accessibility.
 - **Contact**: Contact information, Google Maps embed, and social links.
 - **WhatsApp Integration**: Direct WhatsApp links with prefilled messages for easy enquiries.
@@ -20,7 +20,13 @@ A modern, responsive static website for **Travel Bug North East**, a travel agen
 
 ---
 
-## 🛠️ Tech Stack
+## 📝 Recent Updates
+- **Code Cleanup**: Removed unused image assets and optimized file structure
+- **Tour Packages**: Added comprehensive itineraries for Meghalaya, Assam, Assam-Meghalaya, and Assam-Arunachal Pradesh
+- **WhatsApp Integration**: Updated prepopulated messages to match exact tour titles
+- **Asset Management**: Organized images by destination folders and removed duplicates
+
+---
 - **Frontend**: HTML5, CSS3 (Flexbox, Grid), Vanilla JavaScript
 - **Icons**: Font Awesome CDN
 - **Maps**: Google Maps Embed
@@ -32,11 +38,18 @@ A modern, responsive static website for **Travel Bug North East**, a travel agen
 
 ## 📂 Project Structure
 ```
-ComfortTravels/
+TravelBug/
 ├── index.html        # Main website structure and content
+├── destinations.html # Tour packages page with booking integration
+├── gallery.html      # Image gallery page
 ├── styles.css        # Complete styling for responsive design
-├── script.js         # Interactive JavaScript (hamburger menu, smooth scrolling)
-└── asset/            # Local image assets (16 images: Car1.png, Shillong.jpg, etc.)
+├── script.js         # Interactive JavaScript (modals, slideshow, navigation)
+├── site.webmanifest  # PWA manifest file
+└── asset/            # Local image assets organized by location
+    ├── meghalaya/    # Meghalaya destination images
+    ├── tawang/       # Tawang destination images
+    ├── vehicle/      # Vehicle images (currently empty)
+    ├── *.png/*.jpg   # Main assets (logos, gallery images, etc.)
 ```
 
 ---

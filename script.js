@@ -159,250 +159,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const viewDetailsBtns = document.querySelectorAll('.view-details-btn');
 
   const tourData = {
-      arunachal: {
-        title: '6 Nights / 7 Days Arunachal Pradesh Tour (Dirang – Tawang)',
-        image: 'asset/Tawang.png',
-        itinerary: `
-          <h3>Tour Highlights</h3>
-          <ul>
-            <li>Bhalukpong - Gateway to Arunachal Pradesh</li>
-            <li>Tipi Orchid Centre - World's largest orchidarium</li>
-            <li>Dirang Dzong - Ancient fort and monastery</li>
-            <li>Tawang Monastery - Largest monastery in India</li>
-            <li>Beautiful landscapes and cultural experiences</li>
-          </ul>
-          
-          <h3>Detailed Itinerary</h3>
-          <div class="itinerary-day">
-            <h4>Day 1: Arrival at Bhalukpong</h4>
-            <p>Arrival at Bhalukpong. Transfer to hotel. Evening free for relaxation. Overnight stay.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 2: Bhalukpong to Dirang</h4>
-            <p>After breakfast, drive to Dirang. Visit Tipi Orchid Centre. Check into hotel. Evening at leisure. Overnight stay.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 3: Dirang Sightseeing</h4>
-            <p>Visit Dirang Dzong and Hot Spring. Explore the beautiful Dirang Valley. Overnight stay in Dirang.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 4: Dirang to Tawang</h4>
-            <p>Early morning drive to Tawang (Sela Pass). Visit Sela Lake and Pass. Arrive Tawang. Overnight stay.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 5: Tawang Sightseeing</h4>
-            <p>Visit Tawang Monastery, War Memorial, and local markets. Explore the cultural heritage. Overnight stay.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 6: Tawang to Bomdila</h4>
-            <p>Drive to Bomdila. Visit Bomdila Monastery and viewpoints. Overnight stay in Bomdila.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 7: Departure</h4>
-            <p>After breakfast, drive back to Bhalukpong/Guwahati for departure. Tour ends with sweet memories.</p>
-          </div>
-          
-          <h3>Package Includes</h3>
-          <ul>
-            <li>Accommodation in comfortable hotels</li>
-            <li>All meals (Breakfast, Lunch, Dinner)</li>
-            <li>Transportation by private vehicle</li>
-            <li>English speaking guide</li>
-            <li>All entry fees and permits</li>
-            <li>Inner line permit assistance</li>
-          </ul>
-          
-          <h3>Package Excludes</h3>
-          <ul>
-            <li>Airfare/Train fare</li>
-            <li>Personal expenses</li>
-            <li>Camera fees</li>
-            <li>Any additional activities</li>
-            <li>Travel insurance</li>
-          </ul>
-        `
-      },
-      mawsynram: {
-        title: '3 Nights / 4 Days Mawsynram Tour Package (Shillong – Mawsynram – Dawki)',
-        image: 'asset/Cherrapunji.png',
-        itinerary: `
-          <h3>Tour Highlights</h3>
-          <ul>
-            <li>Umiam Lake (Barapani) - Beautiful reservoir lake</li>
-            <li>Elephant Falls - Scenic waterfall in Shillong</li>
-            <li>Shillong Peak - Highest point in Shillong</li>
-            <li>Mawsynram - Wettest place on Earth</li>
-            <li>Dawki River - Crystal clear waters</li>
-          </ul>
-          
-          <h3>Detailed Itinerary</h3>
-          <div class="itinerary-day">
-            <h4>Day 1: Arrival in Shillong</h4>
-            <p>Arrival at Shillong. Transfer to hotel. Visit Umiam Lake and Elephant Falls. Evening at leisure. Overnight stay in Shillong.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 2: Shillong Sightseeing</h4>
-            <p>Visit Shillong Peak, Ward's Lake, and local markets. Explore the colonial architecture. Overnight stay in Shillong.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 3: Shillong to Mawsynram to Dawki</h4>
-            <p>Drive to Mawsynram (wettest place on Earth). Visit waterfalls and living root bridges. Continue to Dawki for boat ride on Umngot River. Overnight stay in Dawki.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 4: Departure</h4>
-            <p>After breakfast, transfer to Guwahati/Shillong airport/railway station for departure. Tour ends.</p>
-          </div>
-          
-          <h3>Package Includes</h3>
-          <ul>
-            <li>Accommodation in comfortable hotels</li>
-            <li>All meals (Breakfast, Lunch, Dinner)</li>
-            <li>Transportation by private vehicle</li>
-            <li>English speaking guide</li>
-            <li>All entry fees</li>
-          </ul>
-          
-          <h3>Package Excludes</h3>
-          <ul>
-            <li>Airfare/Train fare</li>
-            <li>Personal expenses</li>
-            <li>Camera fees</li>
-            <li>Any additional activities</li>
-            <li>Travel insurance</li>
-          </ul>
-        `
-      },
-      nartiang: {
-        title: '3 Nights / 4 Days Nartiang Tour Package (Shillong – Jaintia Hills – Dawki)',
-        image: 'asset/Shillong.jpg',
-        itinerary: `
-          <h3>Tour Highlights</h3>
-          <ul>
-            <li>Umiam Lake - Beautiful reservoir lake</li>
-            <li>Elephant Falls - Scenic waterfall</li>
-            <li>Shillong Peak - Panoramic views</li>
-            <li>Jaintia Hills - Traditional Khasi culture</li>
-            <li>Dawki River - Crystal clear waters</li>
-          </ul>
-          
-          <h3>Detailed Itinerary</h3>
-          <div class="itinerary-day">
-            <h4>Day 1: Arrival in Shillong</h4>
-            <p>Arrival at Shillong. Transfer to hotel. Visit Umiam Lake and Elephant Falls. Evening at leisure. Overnight stay in Shillong.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 2: Shillong Sightseeing</h4>
-            <p>Visit Shillong Peak, Ward's Lake, and local markets. Explore the colonial architecture. Overnight stay in Shillong.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 3: Shillong to Jaintia Hills to Dawki</h4>
-            <p>Drive to Jaintia Hills. Visit Nartiang Monoliths and traditional villages. Continue to Dawki for boat ride on Umngot River. Overnight stay in Dawki.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 4: Departure</h4>
-            <p>After breakfast, transfer to Guwahati/Shillong airport/railway station for departure. Tour ends.</p>
-          </div>
-          
-          <h3>Package Includes</h3>
-          <ul>
-            <li>Accommodation in comfortable hotels</li>
-            <li>All meals (Breakfast, Lunch, Dinner)</li>
-            <li>Transportation by private vehicle</li>
-            <li>English speaking guide</li>
-            <li>All entry fees</li>
-          </ul>
-          
-          <h3>Package Excludes</h3>
-          <ul>
-            <li>Airfare/Train fare</li>
-            <li>Personal expenses</li>
-            <li>Camera fees</li>
-            <li>Any additional activities</li>
-            <li>Travel insurance</li>
-          </ul>
-        `
-      },
-      'northeast-kaziranga': {
-        title: '5 Nights / 6 Days North East Tour (Kaziranga – Shillong – Cherrapunjee – Dawki – Mawlynnong)',
-        image: 'asset/Kaziranga1.png',
-        itinerary: `
-          <h3>Tour Highlights</h3>
-          <ul>
-            <li>Kaziranga National Park - UNESCO World Heritage Site</li>
-            <li>Elephant Safari - Wildlife experience</li>
-            <li>Jeep Safari - Explore the park</li>
-            <li>Shillong - Scotland of the East</li>
-            <li>Cherrapunjee - Wettest place on Earth</li>
-            <li>Dawki - Crystal clear river</li>
-            <li>Mawlynnong - Asia's cleanest village</li>
-          </ul>
-          
-          <h3>Detailed Itinerary</h3>
-          <div class="itinerary-day">
-            <h4>Day 1: Arrival at Kaziranga</h4>
-            <p>Arrival at Kaziranga. Transfer to resort. Evening at leisure. Overnight stay in Kaziranga.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 2: Kaziranga Wildlife Safari</h4>
-            <p>Morning and evening jeep/elephant safari in Kaziranga National Park. Spot rhinos, tigers, and birds. Overnight stay in Kaziranga.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 3: Kaziranga to Shillong</h4>
-            <p>Drive to Shillong. Visit Umiam Lake and Elephant Falls on the way. Check into hotel. Evening at leisure. Overnight stay in Shillong.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 4: Shillong to Cherrapunjee to Mawlynnong</h4>
-            <p>Drive to Cherrapunjee. Visit Nohkalikai Falls and viewpoints. Continue to Mawlynnong village. Overnight stay near Mawlynnong.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 5: Mawlynnong to Dawki</h4>
-            <p>Visit Mawlynnong village. Drive to Dawki for boat ride on Umngot River. Explore the border area. Overnight stay in Dawki.</p>
-          </div>
-          
-          <div class="itinerary-day">
-            <h4>Day 6: Departure</h4>
-            <p>After breakfast, transfer to Guwahati airport/railway station for departure. Tour ends with wonderful memories.</p>
-          </div>
-          
-          <h3>Package Includes</h3>
-          <ul>
-            <li>Accommodation in comfortable hotels/resorts</li>
-            <li>All meals (Breakfast, Lunch, Dinner)</li>
-            <li>Transportation by private vehicle</li>
-            <li>English speaking guide</li>
-            <li>Kaziranga safari fees</li>
-            <li>All entry fees</li>
-          </ul>
-          
-          <h3>Package Excludes</h3>
-          <ul>
-            <li>Airfare/Train fare</li>
-            <li>Personal expenses</li>
-            <li>Camera fees</li>
-            <li>Any additional activities</li>
-            <li>Travel insurance</li>
-          </ul>
-        `
-      },
       meghalaya: {
-        title: '4 Days / 5 Nights Meghalaya Tour (Shillong – Cherrapunjee – Mawlynnong – Dawki)',
-        image: 'asset/Mawlynnong.png',
+        title: 'Meghalaya Shillong, Sohra (Cherrapunjee), Dawki and Mawlynnong (4 DAYS/ 5 NIGHTS)',
+        image: 'asset/meghalaya/meghalayahill.jpg',
         itinerary: `
           <h3>Tour Highlights</h3>
           <ul>
@@ -410,38 +169,42 @@ document.addEventListener("DOMContentLoaded", () => {
             <li>Sohra (Cherrapunjee)- Waterfalls &amp; Caves</li>
             <li>Dawki – Crystal clear water</li>
             <li>Mawlynnong – Asia’s cleanest village</li>
-            <li>Dawki River - Crystal clear waters</li>
-            <li>Laitlum Canyons – Deep Valleys and misty clouds</li>            
+            <li>Laitlum Canyons – Deep Valleys and misty clouds</li>
           </ul>
           
           <h3>Detailed Itinerary</h3>
           <div class="itinerary-day">
-            <h4>Day 1: Arrival in Shillong</h4>
-            <p>Arrival at Shillong. Transfer to hotel. Visit Umiam Lake and Elephant Falls. Evening at leisure. Overnight stay in Shillong.</p>
+            <h4>Day 1: Arrival at Guwahati &amp; Travel to Shillong</h4>
+            <p>Morning/Afternoon: Arrive at Guwahati Airport or Railway Station and take a scenic drive to Shillong, the capital of Meghalaya. En route: Stop at a picturesque Umiam Lake (also known as Barapani) for views and optional water activities. Evening: Check in to your hotel and spend the evening exploring the bustling Police Bazar area for shopping and local food.</p>
           </div>
           
           <div class="itinerary-day">
-            <h4>Day 2: Shillong to Cherrapunjee</h4>
-            <p>Drive to Cherrapunjee. Visit Nohkalikai Falls, Seven Sisters Falls, and Eco Park. Explore the viewpoints. Overnight stay in Cherrapunjee.</p>
+            <h4>Day 2: Shillong Sightseeing and Journey to Sohra (Cherrapunjee)</h4>
+            <p>Morning: After breakfast, visit local Shillong attractions such as the tiered Elephant Falls and Shillong Peak for panoramic city views. Afternoon: Drive to Sohra (Cherrapunjee), one of the wettest place on Earth. On the way stop at the scenic Mawkdok Dympep Valley Viewpoint. Evening: Upon arrival in Sohra, check into your accommodation and relax.</p>
           </div>
           
           <div class="itinerary-day">
-            <h4>Day 3: Cherrapunjee to Mawlynnong to Dawki</h4>
-            <p>Visit Mawlynnong village (Asia's cleanest village). See living root bridges. Continue to Dawki for boat ride on Umngot River. Overnight stay in Dawki.</p>
+            <h4>Day 3: Exploring Sohra's (Cherrapunjee) Wonders &amp; the Double Decker Root Bridge Trek</h4>
+            <p>Morning: After breakfast, explore the natural limestone formations of the Mawsmai Cave &amp; Arwah Cave. Afternoon: Witness the magnificent Nohkalikai Falls, India's tallest plunge waterfall &amp; Seven Sisters Waterfalls, a stunning seven-segmented waterfall. Evening: Return to hotel in Sohra (Cherrapunjee) for an overnight stay.</p>
           </div>
           
           <div class="itinerary-day">
-            <h4>Day 4: Departure</h4>
-            <p>After breakfast, transfer to Guwahati/Shillong airport/railway station for departure. Tour ends.</p>
+            <h4>Day 4: Mawlynnong Village &amp; Dawki River Adventure</h4>
+            <p>Morning: After breakfast, drive to Mawlynnong Village, known as "Asia's Cleanest Village". Walk around the pristine village and see the local Living Root Bridge and the Natural Balancing Rock. Afternoon: Proceed to Dawki, a town on the India-Bangladesh border, famous for the crystal-clear water of the Umngot River. Enjoy a tranquil boat ride on the river. Evening: Drive back to Shillong for your overnight stay.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 5: Laitlum Canyon &amp; Departure</h4>
+            <p>Morning: After breakfast, visit the stunning Laitlum Canyons, offering breathtaking panoramic views of the hills and gorges. Afternoon: Depart for Guwahati Airport or Railway Station for your onward journey, carrying memories of Meghalaya's natural beauty.</p>
           </div>
           
           <h3>Package Includes</h3>
           <ul>
-            <li>Accommodation in comfortable hotels</li>
-            <li>All meals (Breakfast, Lunch, Dinner)</li>
-            <li>Transportation by private vehicle</li>
-            <li>English speaking guide</li>
-            <li>All entry fees</li>
+            <li>Accommodation in comfortable hotels, guest house, etc.</li>
+            <li>Meals (Breakfast &amp; Dinner)</li>
+            <li>Transportation</li>
+            <li>English &amp; Hindi speaking guides</li>
+            <li>Parking</li>
           </ul>
           
           <h3>Package Excludes</h3>
@@ -449,47 +212,114 @@ document.addEventListener("DOMContentLoaded", () => {
             <li>Airfare/Train fare</li>
             <li>Personal expenses</li>
             <li>Camera fees</li>
+            <li>Entry fees (at chargeable spots)</li>
+            <li>Travel insurance</li>
             <li>Any additional activities</li>
+          </ul>
+        `
+      },
+      assam: {
+        title: 'Assam Guwahati, Kamakhya Temple, Kaziranga National Park And Manjuli Island (4 Days/ 5 Nights)',
+        image: 'asset/Kaziranga1.png',
+        itinerary: `
+          <h3>Tour Highlights</h3>
+          <ul>
+            <li>Kamakhya Temple – One of the 108 Shakti Peethas</li>
+            <li>Kaziranga National Park – UNESCO World Heritage Site</li>
+            <li>Majuli Island – World's largest inhabited river island</li>
+            <li>Umananda Temple – A temple in an island in the Brahmaputra River</li>
+          </ul>
+          
+          <h3>Detailed Itinerary</h3>
+          <div class="itinerary-day">
+            <h4>Day 1: Arrival in Guwahati and Local Exploration</h4>
+            <p>Morning/Afternoon: Upon arrival at Guwahati Airport or Railway Station, check into your hotel. Afternoon: Visit the revered Kamakhya Temple located atop Nilachal Hills. Evening: Enjoy a picturesque Sunset Cruise on the Brahmaputra River and overnight stay in Guwahati.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 2: Guwahati to Kaziranga National Park</h4>
+            <p>Morning: After breakfast, visit Umananda Temple located in the Brahmaputra River accessible via regular ferry services from Guwahati. Afternoon: Drive to Kaziranga National Park, a UNESCO World Heritage Site famous for one-horned rhinoceros. En Route: Visit the Maha Mritunjay Temple, featuring the World's largest Shiva Linga (126 feet tall). Evening: Check into your hotel for an overnight stay.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 3: Kaziranga Safaris &amp; Orchid Park</h4>
+            <p>Morning: Start your day with an early morning Elephant or Jeep Safari in the park's central or western range for a chance to spot diverse wildlife up close. Afternoon: Visit the Kaziranga Orchid and Biodiversity Park, the largest in North East India. Evening: It can be spent at leisure or exploring nearby tea gardens and local villages.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 4: Majuli Island Exploration</h4>
+            <p>Morning: Drive to Jorhat (around 2.5 hrs) and take a ferry to Majuli island, the world's Largest River Island and hub of Neo-Vaishnavite culture. Afternoon: Explore traditional Satras (monasteries), witness traditional mask making and observe the Missing tribal villages. Evening: Stay overnight in Majuli or Jorhat.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 5: Guwahati &amp; Departure</h4>
+            <p>Morning: Drive back to Guwahati (7 hrs approx). Afternoon: Visit Tirupati Sri Balaji Temple, a prominent South Indian style temple featuring 4 tons idol of Lord Venkateshwara. Evening: Drop at Guwahati Airport or Railway Station for your onward journey, carrying Assam's cordiality.</p>
+          </div>
+          
+          <h3>Package Includes</h3>
+          <ul>
+            <li>Accommodation in comfortable hotels, guest house, etc.</li>
+            <li>Meals (Breakfast &amp; Dinner)</li>
+            <li>Transportation</li>
+            <li>English &amp; Hindi speaking guides</li>
+            <li>Parking</li>
+          </ul>
+          
+          <h3>Package Excludes</h3>
+          <ul>
+            <li>Airfare/Train fare</li>
+            <li>Personal expenses</li>
+            <li>Camera fees</li>
+            <li>Entry fees (at chargeable spots)</li>
             <li>Travel insurance</li>
           </ul>
         `
       },
-      'northeast-shillong': {
-        title: '2 Nights / 3 Days North East Tour (Shillong – Cherrapunjee)',
-        image: 'asset/Shillong3.jpg',
+      'assam-meghalaya': {
+        title: 'Assam &amp; Meghalaya (4 Nights/ 5 Days)',
+        image: 'asset/Shillong.jpg',
         itinerary: `
           <h3>Tour Highlights</h3>
           <ul>
-            <li>Umiam Lake (Barapani) - Beautiful reservoir lake</li>
-            <li>Shillong Peak - Highest point in Shillong</li>
-            <li>Elephant Falls - Scenic waterfall</li>
-            <li>Cherrapunjee - Wettest place on Earth</li>
-            <li>Seven Sisters Falls - Spectacular waterfalls</li>
+            <li>Kaziranga National Park- UNESCO World Heritage Site</li>
+            <li>Dawki- Crystal clear water</li>
+            <li>Sohra- Waterfalls &amp; Caves</li>
+            <li>Mawlynnong- Asia's cleanest village</li>
           </ul>
           
           <h3>Detailed Itinerary</h3>
           <div class="itinerary-day">
-            <h4>Day 1: Arrival in Shillong</h4>
-            <p>Arrival at Shillong. Transfer to hotel. Visit Umiam Lake, Elephant Falls, and Shillong Peak. Evening at leisure. Overnight stay in Shillong.</p>
+            <h4>Day 1: Arrival &amp; Kaziranga</h4>
+            <p>Morning: Arrive in Guwahati Airport or Railway Station, travel to Kaziranga National Park. Evening: Visit the Kaziranga Orchid and Biodiversity Park, the largest in North East India.</p>
           </div>
           
           <div class="itinerary-day">
-            <h4>Day 2: Shillong to Cherrapunjee</h4>
-            <p>Drive to Cherrapunjee. Visit Nohkalikai Falls, Seven Sisters Falls, and Eco Park. Explore the viewpoints and living root bridges. Overnight stay in Cherrapunjee.</p>
+            <h4>Day 2: Kaziranga Safari &amp; travel to Shillong</h4>
+            <p>Morning: Start your day with an early morning Elephant or Jeep Safari in the park's central or western range for a chance to spot diverse wildlife and the one-horned rhinoceros up close. After breakfast: Travel to Shillong, the capital of Meghalaya. En route: Stop at a picturesque Umiam Lake (also known as Barapani) for views and optional water activities. Evening: Check in to your hotel and spend the evening exploring the bustling Police Bazar area for shopping and local food.</p>
           </div>
           
           <div class="itinerary-day">
-            <h4>Day 3: Departure</h4>
-            <p>After breakfast, transfer to Guwahati/Shillong airport/railway station for departure. Tour ends.</p>
+            <h4>Day 3: Sohra (Cherrapunjee)</h4>
+            <p>Morning &amp; Afternoon: Full-day excursion in Sohra (Cherrapunjee), witness the magnificent Nohkalikai Falls, India's tallest plunge waterfall &amp; Seven Sisters Waterfalls, a stunning seven-segmented waterfall and explore the natural limestone formations of the Mawsmai Cave &amp; Arwah Cave. Evening: Return to Shillong for overnight stay.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 4: Mawlynnong Village &amp; Dawki River Adventure</h4>
+            <p>Morning: After breakfast, visit Mawlynnong, "Asia's Cleanest Village", and enjoy a boat ride on the crystal clear water of Umngot River in Dawki. Evening: Return to Shillong for an overnight stay.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 5: Shillong sight-seeing &amp; Departure</h4>
+            <p>Morning: Visit Elephant Falls, a stunning three tiered waterfall and the Don Bosco Museum provides a glimpse of the rich and multi-cultural lifestyle of the indigenous people of Northeast. Evening: Depart for Guwahati Airport or Railway Station for your onward journey.</p>
           </div>
           
           <h3>Package Includes</h3>
           <ul>
-            <li>Accommodation in comfortable hotels</li>
-            <li>All meals (Breakfast, Lunch, Dinner)</li>
-            <li>Transportation by private vehicle</li>
-            <li>English speaking guide</li>
-            <li>All entry fees</li>
+            <li>Accommodation in comfortable hotels, guest house, etc.</li>
+            <li>Meals (Breakfast &amp; Dinner)</li>
+            <li>Transportation</li>
+            <li>English &amp; Hindi speaking guides</li>
+            <li>Parking</li>
           </ul>
           
           <h3>Package Excludes</h3>
@@ -497,20 +327,92 @@ document.addEventListener("DOMContentLoaded", () => {
             <li>Airfare/Train fare</li>
             <li>Personal expenses</li>
             <li>Camera fees</li>
-            <li>Any additional activities</li>
+            <li>Entry fees (at chargeable spots)</li>
             <li>Travel insurance</li>
+          </ul>
+        `
+      },
+      'assam-arunachal': {
+        title: 'Assam & Arunachal Pradesh Tour (Kaziranga, Tawang) - 8 Days / 7 Nights',
+        image: 'asset/tawang/tawang008.jpg',
+        itinerary: `
+          <h3>Tour Highlights</h3>
+          <ul>
+            <li>Kamakhya Temple – One of the 108 Shakti Peethas</li>
+            <li>Kaziranga National Park – UNESCO World Heritage Site</li>
+            <li>Bomdila- stunning Himalayan views &amp; serene Tibetan Buddhist Monasteries</li>
+            <li>Dirang- Hot Springs , Apple Orchards &amp; historic fort</li>
+            <li>Tawang- Asia's Second Largest Monastery, frozen lake &amp; Waterfalls</li>
+          </ul>
+          
+          <h3>Detailed Itinerary</h3>
+          <div class="itinerary-day">
+            <h4>Day 1: Arrival at Guwahati &amp; Local Exploration</h4>
+            <p>Morning/Afternoon: Upon arrival at Guwahati Airport or Railway Station, check into your hotel. Afternoon: Visit the revered Kamakhya Temple located atop Nilachal Hills. Evening: Enjoy a picturesque Sunset Cruise on the Brahmaputra River and overnight stay in Guwahati.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 2: Guwahati to Kaziranga National Park</h4>
+            <p>Morning: After breakfast, visit Umananda Temple located in the Brahmaputra River accessible via regular ferry services from Guwahati. Afternoon: Drive to Kaziranga National Park, a UNESCO World Heritage Site famous for one-horned rhinoceros. Evening: Visit the Kaziranga Orchid and Biodiversity Park, the largest in North East India.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 3: Kaziranga Safaris &amp; Dirang (Arunachal Pradesh)</h4>
+            <p>Morning: Start your day with an early morning Elephant or Jeep Safari in the park's central or western range for a chance to spot diverse wildlife and one horned rhinoceros up close. After breakfast: Start your journey to Dirang. En route: Visit the Bomdila Monastery considered the replica of the Tsona Gontse Monastery in South Tibet, witness the beautiful Nichiphula Waterfall located in a deep valley surrounded by Himalayan Mountains and experience walking on a hanging bridge. Evening: Check into your hotels and you can explore the local Dirang Market.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 4: Dirang to Tawang</h4>
+            <p>Morning: After breakfast, visit the Dirang Dzong Fort centuries old four storey fort offering a glimpse into the historic architecture and witness the naturally occurring Hot Water Springs situated on a hilltop, believed to have medicinal properties known as the Dirang Hot Water Spring. En route: Stop at Sela Lake (at 13,700 ft) known for its deep blue waters in summer and frozen surface in winter. Evening: Check into your hotels for an overnight stay.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 5: Exploring Tawang</h4>
+            <p>Morning: After breakfast, visit the Gaden Namgyal Lhatse Monastery (Tawang Monastery), 'India's Largest Monastery &amp; Asia's Second Largest Monastery.' After which you can visit the Buddha Park it offers a panoramic views of the surrounding hills and at the centerpiece a 30 ft tall gilded statue of the Lord Buddha situated on a hill. Afternoon: You can explore the Local Market. Evening: Witness the Tawang War Memorial where you can see a 40 ft high Buddhist style Stupa honoring 2420 Indian soldiers who died in the 1962 Indo-China War. Sound &amp; Light Shows are also held here which depicts the War's events and sacrifices. The Major Ralengnao Bob Khating Museum is located nearby. Lastly, you can enjoy the cultural programme like the traditional Monpa Dance &amp; the Snow Lion Dance here.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 6: Sangetsar Lake (Madhuri Lake) &amp; Bumla Pass</h4>
+            <p>Morning: After breakfast, set out to visit Bumla Pass it is a historic Sino-Indian Border post famously used by the Dalai Lama to enter India. It offers panoramic views of the Tibetan Plateau. En route: You will witness Sangetsar Lake also known as Madhuri Lake after a song from Koyla movie was shot here. It is a stunning high altitude lake formed by an earthquake in the 1970s, it is renowned for its scenic beauty and partially submerged tree trunks. Evening: Check into your hotel for an overnight stay.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 7: Tawang to Tezpur</h4>
+            <p>Morning: Set on your journey to Tezpur (Assam). En route: Stop at Nuranang Waterfalls (Jang Falls), is a spectacular 100 meter-high waterfall and visit Jaswant Garh War Memorial, a memorial in honour of Rifleman Jaswant Singh Rawat who valiantly fought the Chinese Army during 1962 Sino-Indian War. Evening: Check into your hotel for an overnight stay at Tezpur.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 8: Tezpur to Guwahati</h4>
+            <p>Morning: After breakfast, drive back to Guwahati. En route: Visit the Maha Mritunjay Temple, featuring the World's largest Shiva Linga (126 feet tall). Evening: Drop at Guwahati Airport or Railway Station for your onward journey, ending your tour with wonderful memories.</p>
+          </div>
+          
+          <h3>Package Includes</h3>
+          <ul>
+            <li>Accommodation in comfortable hotels, guest house, etc.</li>
+            <li>Meals (Breakfast &amp; Dinner)</li>
+            <li>Transportation</li>
+            <li>English &amp; Hindi speaking guides</li>
+            <li>Parking</li>
+          </ul>
+          
+          <h3>Package Excludes</h3>
+          <ul>
+            <li>Airfare/Train fare</li>
+            <li>Personal expenses</li>
+            <li>Camera fees</li>
+            <li>Entry fees (at chargeable spots)</li>
+            <li>Travel insurance</li>
+            <li>Any additional activities</li>
           </ul>
         `
       }
   };
 
   const tourBookingLinks = {
-    mawsynram: "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%203%20Nights%204%20Days%20Mawsynram%20Tour%20Package.%20Please%20provide%20booking%20details.",
-    nartiang: "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%203%20Nights%204%20Days%20Nartiang%20Tour%20Package.%20Please%20provide%20booking%20details.",
-    arunachal: "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%206%20Nights%207%20Days%20Arunachal%20Pradesh%20Tour%20(Dirang%20%E2%80%93%20Tawang).%20Please%20provide%20booking%20details.",
-    "northeast-kaziranga": "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%205%20Nights%206%20Days%20North%20East%20Tour.%20Please%20provide%20booking%20details.",
-    meghalaya: "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%203%20Nights%204%20Days%20Meghalaya%20Tour.%20Please%20provide%20booking%20details.",
-    "northeast-shillong": "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%202%20Nights%203%20Days%20North%20East%20Tour.%20Please%20provide%20booking%20details."
+    meghalaya: "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%20Meghalaya%20Shillong%2C%20Sohra%20(Cherrapunjee)%2C%20Dawki%20and%20Mawlynnong%20(4%20Days%2F5%20Nights)%20Tour.%20Please%20provide%20booking%20details.",
+    assam: "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%20Assam%20Guwahati%2C%20Kamakhya%20Temple%2C%20Kaziranga%20National%20Park%20And%20Majuli%20Island%20(4%20Days%2F5%20Nights)%20Tour.%20Please%20provide%20booking%20details.",
+    "assam-meghalaya": "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%20Assam%20%26%20Meghalaya%20(4%20Nights%2F5%20Days)%20Tour.%20Please%20provide%20booking%20details.",
+    "assam-arunachal": "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%20Assam%20%26%20Arunachal%20Pradesh%20Tour%20(Kaziranga%2C%20Tawang)%20-%208%20Days%20%2F%207%20Nights.%20Please%20provide%20booking%20details."
   };
 
   function renderTourDetailsHtml(tourId, bookNowUrl) {
