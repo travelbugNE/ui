@@ -25,40 +25,46 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
     });
 });
 document.addEventListener("DOMContentLoaded", () => {
-  const images = [         
-    "asset/tawang/SelaPass.jpg",   
-    "asset/tawang/panga-teng-tso-lake-tawang-arunachal.jpg",
-    "asset/tawang/TawangVillage2.jpg",
-    "asset/assam/brahmaputra2.jpg",
-    "asset/assam/KazirangaNationalPark.jpg",
-    "asset/meghalaya/landcloud.jpg",
-    "asset/meghalaya/meghalayahill.jpg",
+  const images = [    
+        
     "asset/meghalaya/SevenSisterFalls.png",
-    "asset/meghalaya/meghalayafall2.jpg",
+    "asset/meghalaya/meghalayafall2.jpg", 
+    "asset/meghalaya/meghalayafall1.jpg",
+    "asset/meghalaya/meghalayahill.jpg", 
+    "asset/meghalaya/landcloud.jpg",
+    "asset/assam/KazirangaNationalPark.jpg", 
+    "asset/assam/brahmaputra2.jpg",  
+    "asset/tawang/TawangVillage2.jpg",
+    "asset/tawang/panga-teng-tso-lake-tawang-arunachal.jpg",     
+    "asset/tawang/SelaPass.jpg", 
   ];
 
   const hero = document.querySelector(".hero");
 
-  // Create slide divs dynamically
-  images.forEach((img, i) => {
-    const slide = document.createElement("div");
-    slide.classList.add("hero-slide");
-    slide.style.backgroundImage = 
-      `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${img}')`;
-    if (i === 0) slide.classList.add("active"); // first image visible
-    hero.appendChild(slide);
-  });
+  if (hero) {
+    // Create slide divs dynamically
+    images.forEach((img, i) => {
+      const slide = document.createElement("div");
+      slide.classList.add("hero-slide");
+      slide.style.backgroundImage = 
+        `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${img}')`;
+      if (i === 0) slide.classList.add("active"); // first image visible
+      hero.appendChild(slide);
+    });
 
-  const slides = document.querySelectorAll(".hero-slide");
-  let current = 0;
+    const slides = document.querySelectorAll(".hero-slide");
+    let current = 0;
 
-  function showNextSlide() {
-    slides[current].classList.remove("active");
-    current = (current + 1) % slides.length;
-    slides[current].classList.add("active");
+    function showNextSlide() {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    }
+
+    if (slides.length > 1) {
+      setInterval(showNextSlide, 6000); // change every 6s
+    }
   }
-
-  setInterval(showNextSlide, 6000); // change every 6s
 });
 
 // Gallery Modal Functionality with Categories and Enhanced Lightbox
@@ -316,7 +322,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       assam: {
         title: 'Assam Guwahati, Kamakhya Temple, Kaziranga National Park And Manjuli Island (4 Days/ 5 Nights)',
-        image: 'asset/Kaziranga1.png',
+        image: 'asset/assam/KazirangaNationalPark.jpg',
         itinerary: `
           <h3>Tour Highlights</h3>
           <ul>
@@ -373,7 +379,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       'assam-meghalaya': {
         title: 'Assam &amp; Meghalaya (4 Nights/ 5 Days)',
-        image: 'asset/assam/assam0012.jpg',
+        image: 'asset/meghalaya/nongjrong-village-above-cloud.jpg',
         itinerary: `
           <h3>Tour Highlights</h3>
           <ul>
