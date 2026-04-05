@@ -27,7 +27,7 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
 document.addEventListener("DOMContentLoaded", () => {
   const images = [         
     "asset/tawang/SelaPass.jpg",   
-    "asset/tawang/PTsolake.jpg",
+    "asset/tawang/panga-teng-tso-lake-tawang-arunachal.jpg",
     "asset/tawang/TawangVillage2.jpg",
     "asset/assam/brahmaputra2.jpg",
     "asset/assam/KazirangaNationalPark.jpg",
@@ -61,47 +61,124 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(showNextSlide, 6000); // change every 6s
 });
 
-// Gallery Modal Functionality
+// Gallery Modal Functionality with Categories and Enhanced Lightbox
 document.addEventListener("DOMContentLoaded", () => {
   // Only run on pages with gallery
   if (document.querySelector('.gallery-grid')) {
     const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
-    const captionText = document.getElementById('caption');
-    const closeBtn = document.querySelector('.close');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
+    const modalImg = document.getElementById('lightboxImage');
+    const titleText = document.getElementById('lightboxTitle');
+    const descriptionText = document.getElementById('lightboxDescription');
+    const categoryText = document.getElementById('lightboxCategory');
+    const closeBtn = document.querySelector('.lightbox-close');
+    const prevBtn = document.querySelector('.lightbox-prev');
+    const nextBtn = document.querySelector('.lightbox-next');
+    const thumbnailsContainer = document.getElementById('thumbnailsContainer');
 
     let currentImageIndex = 0;
-    const galleryImages = document.querySelectorAll('.gallery-item img');
+    let filteredImages = [];
+    const allGalleryImages = document.querySelectorAll('.gallery-item img');
+    const filterButtons = document.querySelectorAll('.filter-btn');
 
-    // Function to show image in modal
+    // Initialize with all images
+    filteredImages = Array.from(allGalleryImages);
+
+    // Category filtering functionality
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        button.classList.add('active');
+
+        const filterValue = button.getAttribute('data-filter');
+
+        if (filterValue === 'all') {
+          filteredImages = Array.from(allGalleryImages);
+          document.querySelectorAll('.gallery-item').forEach(item => {
+            item.style.display = 'block';
+            item.style.animation = 'fadeInUp 0.6s ease forwards';
+          });
+        } else {
+          const filteredItems = document.querySelectorAll(`.gallery-item[data-category="${filterValue}"]`);
+          filteredImages = Array.from(filteredItems).map(item => item.querySelector('img'));
+
+          // Hide all items first
+          document.querySelectorAll('.gallery-item').forEach(item => {
+            item.style.display = 'none';
+          });
+
+          // Show filtered items with animation
+          filteredItems.forEach((item, index) => {
+            item.style.display = 'block';
+            item.style.animation = `fadeInUp 0.6s ease forwards`;
+            item.style.animationDelay = `${index * 0.1}s`;
+          });
+        }
+      });
+    });
+
+    // Function to show image in lightbox
     function showImage(index) {
-      if (index >= 0 && index < galleryImages.length) {
+      if (index >= 0 && index < filteredImages.length) {
         currentImageIndex = index;
-        const img = galleryImages[index];
+        const img = filteredImages[index];
+        const galleryItem = img.closest('.gallery-item');
+
         modalImg.src = img.src;
-        captionText.innerHTML = img.getAttribute('data-description') || img.alt;
+        modalImg.alt = img.alt;
+
+        const overlay = galleryItem.querySelector('.overlay-content');
+        titleText.innerHTML = overlay.querySelector('h3').textContent;
+        descriptionText.innerHTML = overlay.querySelector('p').textContent;
+        categoryText.innerHTML = overlay.querySelector('.category-tag').textContent;
+
+        updateThumbnails();
       }
+    }
+
+    // Function to create and update thumbnails
+    function updateThumbnails() {
+      thumbnailsContainer.innerHTML = '';
+
+      filteredImages.forEach((img, index) => {
+        const thumbnail = document.createElement('img');
+        thumbnail.src = img.src;
+        thumbnail.alt = img.alt;
+        thumbnail.className = 'thumbnail' + (index === currentImageIndex ? ' active' : '');
+        thumbnail.addEventListener('click', () => showImage(index));
+        thumbnailsContainer.appendChild(thumbnail);
+      });
     }
 
     // Function to show next image
     function showNext() {
-      const nextIndex = (currentImageIndex + 1) % galleryImages.length;
+      const nextIndex = (currentImageIndex + 1) % filteredImages.length;
       showImage(nextIndex);
     }
 
     // Function to show previous image
     function showPrev() {
-      const prevIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+      const prevIndex = (currentImageIndex - 1 + filteredImages.length) % filteredImages.length;
       showImage(prevIndex);
     }
 
     // Add click event to all gallery images
-    galleryImages.forEach((img, index) => {
+    allGalleryImages.forEach((img, index) => {
       img.addEventListener('click', function() {
+        // Update filtered images based on current filter
+        const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+        if (activeFilter === 'all') {
+          filteredImages = Array.from(allGalleryImages);
+          currentImageIndex = index;
+        } else {
+          filteredImages = Array.from(document.querySelectorAll(`.gallery-item[data-category="${activeFilter}"] img`));
+          currentImageIndex = filteredImages.indexOf(img);
+        }
+
         modal.style.display = 'block';
-        showImage(index);
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        showImage(currentImageIndex);
       });
     });
 
@@ -117,13 +194,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (closeBtn) {
       closeBtn.addEventListener('click', () => {
         modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restore scrolling
       });
     }
 
     // Close modal when clicking outside the image
     modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
+      if (e.target === modal || e.target.classList.contains('lightbox-overlay')) {
         modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restore scrolling
       }
     });
 
@@ -138,25 +217,41 @@ document.addEventListener("DOMContentLoaded", () => {
           showNext();
         } else if (e.key === 'Escape') {
           modal.style.display = 'none';
+          document.body.style.overflow = 'auto'; // Restore scrolling
         }
       }
     });
 
-    // Image loading animation
-    galleryImages.forEach(img => {
-      if (img.complete) {
-        img.classList.add('loaded');
-      } else {
-        img.addEventListener('load', () => {
+    // Image loading animation with intersection observer for better performance
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
           img.classList.add('loaded');
-        });
-      }
+          observer.unobserve(img);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    allGalleryImages.forEach(img => {
+      imageObserver.observe(img);
+    });
+
+    // Smooth scroll animations for gallery items
+    const galleryObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      galleryObserver.observe(item);
     });
   }
 
   // Tour Details Modal Functionality
-  const tourModal = document.getElementById('tourModal');
-  const tourDetails = document.getElementById('tourDetails');
   const viewDetailsBtns = document.querySelectorAll('.view-details-btn');
 
   const tourData = {
@@ -335,7 +430,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       'assam-arunachal': {
         title: 'Assam & Arunachal Pradesh Tour (Kaziranga, Tawang) - 8 Days / 7 Nights',
-        image: 'asset/tawang/PTsolake.jpg',
+        image: 'asset/tawang/panga-teng-tso-lake-tawang-arunachal.jpg',
         itinerary: `
           <h3>Tour Highlights</h3>
           <ul>

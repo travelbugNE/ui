@@ -12,7 +12,7 @@ A modern, responsive static website for **Travel Bug North East**, a travel agen
 - **Services**: Showcase of travel services including car rentals and tour packages.
 - **Destinations**: Highlighted destinations across Northeast India with direct WhatsApp enquiry buttons.
 - **Vehicles**: Comprehensive fleet showcase including Urbania (17 seater), Traveller (26 & 17 seater), Ertiga, Innova, Swift, Dezire, and Brezza.
-- **Gallery**: Responsive image gallery featuring local assets of destinations and services.
+- **Gallery**: Premium responsive image gallery with category filters (Meghalaya, Assam, Arunachal Pradesh), advanced lightbox with thumbnails, smooth animations, and lazy loading for optimal performance.
 - **Testimonials**: Customer reviews with improved accessibility.
 - **Contact**: Contact information, Google Maps embed, and social links.
 - **WhatsApp Integration**: Direct WhatsApp links with prefilled messages for easy enquiries.
@@ -21,6 +21,7 @@ A modern, responsive static website for **Travel Bug North East**, a travel agen
 ---
 
 ## 📝 Recent Updates
+- **Premium Gallery Overhaul**: Complete redesign with category filters, advanced lightbox, thumbnails, smooth animations, and lazy loading
 - **Vehicle Fleet Update**: Expanded vehicle showcase to include Urbania (17 seater), Traveller (26 & 17 seater), Ertiga, Innova, Swift, Dezire, and Brezza
 - **Code Cleanup**: Removed unused image assets and optimized file structure
 - **Tour Packages**: Added comprehensive itineraries for Meghalaya, Assam, Assam-Meghalaya, and Assam-Arunachal Pradesh
