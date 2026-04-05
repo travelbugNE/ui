@@ -1,6 +1,6 @@
-# Travel Bug NE Website 🌏✈️
+# Travel Bug North East Website 🌏✈️
 
-A modern, responsive static website for **Travel Bug NE**, a travel agency specializing in car rentals, tour packages, and personalized travel solutions across Northeast India's seven sister states. Built with pure **HTML, CSS, and JavaScript**, featuring WhatsApp integration for direct enquiries and a comprehensive gallery of local destinations.
+A modern, responsive static website for **Travel Bug North East**, a travel agency specializing in car rentals, tour packages, and personalized travel solutions across Northeast India's seven sister states. Built with pure **HTML, CSS, and JavaScript**, featuring WhatsApp integration for direct enquiries and a comprehensive gallery of local destinations.
 
 ---
 
@@ -11,8 +11,8 @@ A modern, responsive static website for **Travel Bug NE**, a travel agency speci
 - **About Us**: Company overview and mission.
 - **Services**: Showcase of travel services including car rentals and tour packages.
 - **Destinations**: Highlighted destinations across Northeast India with direct WhatsApp enquiry buttons.
-- **Vehicles**: Fleet information with specifications.
-- **Gallery**: Responsive image gallery featuring 16 local assets of destinations and services.
+- **Vehicles**: Comprehensive fleet showcase including Urbania (17 seater), Traveller (26 & 17 seater), Ertiga, Innova, Swift, Dezire, and Brezza.
+- **Gallery**: Premium responsive image gallery with category filters (Meghalaya, Assam, Arunachal Pradesh), advanced lightbox with thumbnails, smooth animations, and lazy loading for optimal performance.
 - **Testimonials**: Customer reviews with improved accessibility.
 - **Contact**: Contact information, Google Maps embed, and social links.
 - **WhatsApp Integration**: Direct WhatsApp links with prefilled messages for easy enquiries.
@@ -20,7 +20,15 @@ A modern, responsive static website for **Travel Bug NE**, a travel agency speci
 
 ---
 
-## 🛠️ Tech Stack
+## 📝 Recent Updates
+- **Premium Gallery Overhaul**: Complete redesign with category filters, advanced lightbox, thumbnails, smooth animations, and lazy loading
+- **Vehicle Fleet Update**: Expanded vehicle showcase to include Urbania (17 seater), Traveller (26 & 17 seater), Ertiga, Innova, Swift, Dezire, and Brezza
+- **Code Cleanup**: Removed unused image assets and optimized file structure
+- **Tour Packages**: Added comprehensive itineraries for Meghalaya, Assam, Assam-Meghalaya, and Assam-Arunachal Pradesh
+- **WhatsApp Integration**: Updated prepopulated messages to match exact tour titles
+- **Asset Management**: Organized images by destination folders and removed duplicates
+
+---
 - **Frontend**: HTML5, CSS3 (Flexbox, Grid), Vanilla JavaScript
 - **Icons**: Font Awesome CDN
 - **Maps**: Google Maps Embed
@@ -32,11 +40,18 @@ A modern, responsive static website for **Travel Bug NE**, a travel agency speci
 
 ## 📂 Project Structure
 ```
-ComfortTravels/
+TravelBug/
 ├── index.html        # Main website structure and content
+├── destinations.html # Tour packages page with booking integration
+├── gallery.html      # Image gallery page
 ├── styles.css        # Complete styling for responsive design
-├── script.js         # Interactive JavaScript (hamburger menu, smooth scrolling)
-└── asset/            # Local image assets (16 images: Car1.png, Shillong.jpg, etc.)
+├── script.js         # Interactive JavaScript (modals, slideshow, navigation)
+├── site.webmanifest  # PWA manifest file
+└── asset/            # Local image assets organized by location
+    ├── meghalaya/    # Meghalaya destination images
+    ├── tawang/       # Tawang destination images
+    ├── vehicle/      # Vehicle images (currently empty)
+    ├── *.png/*.jpg   # Main assets (logos, gallery images, etc.)
 ```
 
 ---
@@ -61,9 +76,9 @@ ComfortTravels/
 ---
 
 ## 📞 Contact
-For enquiries or customizations, contact Travel Bug NE via WhatsApp or the website contact form.
+For enquiries or customizations, contact Travel Bug North East via WhatsApp or the website contact form.
 
 ---
 
-*Built for Travel Bug NE - Your gateway to Northeast India.*
+*Built for Travel Bug North East - Your gateway to Northeast India.*
 
