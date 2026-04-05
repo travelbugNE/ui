@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "asset/tawang/PTsolake.jpg",
     "asset/tawang/TawangVillage2.jpg",
     "asset/assam/brahmaputra2.jpg",
-    "asset/assam/assam0012.jpg",
+    "asset/assam/KazirangaNationalPark.jpg",
     "asset/meghalaya/landcloud.jpg",
     "asset/meghalaya/meghalayahill.jpg",
     "asset/meghalaya/SevenSisterFalls.png",
