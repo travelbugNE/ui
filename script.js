@@ -25,15 +25,16 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
     });
 });
 document.addEventListener("DOMContentLoaded", () => {
-  const images = [
-    "asset/meghalaya/meghalayahill.jpg",
-    "asset/SevenSisterFalls.png",
-    "asset/assam0012.jpg",
-    "asset/tawang/tawang008.jpg",
-    "asset/meghalaya/meghalayafall2.jpg",
-    "asset/tawang/tawang005.jpg",
+  const images = [         
+    "asset/tawang/SelaPass.jpg",   
+    "asset/tawang/PTsolake.jpg",
     "asset/tawang/TawangVillage2.jpg",
-    "asset/meghalaya/WeiSawDong1.jpg",
+    "asset/assam/brahmaputra2.jpg",
+    "asset/assam/assam0012.jpg",
+    "asset/meghalaya/landcloud.jpg",
+    "asset/meghalaya/meghalayahill.jpg",
+    "asset/meghalaya/SevenSisterFalls.png",
+    "asset/meghalaya/meghalayafall2.jpg",
   ];
 
   const hero = document.querySelector(".hero");
@@ -277,7 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       'assam-meghalaya': {
         title: 'Assam &amp; Meghalaya (4 Nights/ 5 Days)',
-        image: 'asset/Shillong.jpg',
+        image: 'asset/assam/assam0012.jpg',
         itinerary: `
           <h3>Tour Highlights</h3>
           <ul>
@@ -334,7 +335,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       'assam-arunachal': {
         title: 'Assam & Arunachal Pradesh Tour (Kaziranga, Tawang) - 8 Days / 7 Nights',
-        image: 'asset/tawang/tawang008.jpg',
+        image: 'asset/tawang/PTsolake.jpg',
         itinerary: `
           <h3>Tour Highlights</h3>
           <ul>
