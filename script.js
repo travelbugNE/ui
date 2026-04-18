@@ -25,7 +25,7 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
     });
 });
 document.addEventListener("DOMContentLoaded", () => {
-  const images = [    
+  const images = [
     "asset/meghalaya/sevensisters.jpg",
     "asset/meghalaya/meghalayafall2.jpg",
     "asset/meghalaya/meghalayafall1.jpg",
@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "asset/tawang/TawangVillage2.jpg",
     "asset/tawang/panga-teng-tso-lake-tawang-arunachal.jpg",     
     "asset/tawang/SelaPass.jpg", 
+    "asset/tawang/mayur-more-_VmyPQFsj5s-unsplash.jpg",
   ];
 
   const hero = document.querySelector(".hero");
