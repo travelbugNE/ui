@@ -24,7 +24,7 @@ A modern, responsive static website for **Travel Bug North East**, a travel agen
 - **Premium Gallery Overhaul**: Complete redesign with category filters, advanced lightbox, thumbnails, smooth animations, and lazy loading
 - **Vehicle Fleet Update**: Expanded vehicle showcase to include Urbania (17 seater), Traveller (26 & 17 seater), Ertiga, Innova, Swift, Dezire, and Brezza
 - **Code Cleanup**: Removed unused image assets and optimized file structure
-- **Tour Packages**: Added comprehensive itineraries for Meghalaya, Assam, Assam-Meghalaya, and Assam-Arunachal Pradesh
+- **Tour Packages**: Added comprehensive itineraries for Meghalaya, Assam, Assam-Meghalaya, Assam-Arunachal Pradesh, and Bomdila-Dirang-Tawang
 - **WhatsApp Integration**: Updated prepopulated messages to match exact tour titles
 - **Asset Management**: Organized images by destination folders and removed duplicates
 
