@@ -620,7 +620,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       'bomdila-dirang-tawang': {
         title: 'Bomdila, Dirang & Tawang (7 Days / 6 Nights)',
-        image: 'asset/tawang/SelaPass.jpg',
+        image: 'asset/tawang/panga-teng-tso-lake-tawang-arunachal.jpg',
         itinerary: `
           <h3>Tour Highlights</h3>
           <ul>
