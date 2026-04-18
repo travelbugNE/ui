@@ -25,7 +25,7 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
     });
 });
 document.addEventListener("DOMContentLoaded", () => {
-  const images = [    
+  const images = [
     "asset/meghalaya/sevensisters.jpg",
     "asset/meghalaya/meghalayafall2.jpg",
     "asset/meghalaya/meghalayafall1.jpg",
@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "asset/tawang/TawangVillage2.jpg",
     "asset/tawang/panga-teng-tso-lake-tawang-arunachal.jpg",     
     "asset/tawang/SelaPass.jpg", 
+    "asset/tawang/mayur-more-_VmyPQFsj5s-unsplash.jpg",
   ];
 
   const hero = document.querySelector(".hero");
@@ -507,6 +508,73 @@ document.addEventListener("DOMContentLoaded", () => {
             <li>Any additional activities</li>
           </ul>
         `
+      },
+      'bomdila-dirang-tawang': {
+        title: 'Bomdila, Dirang & Tawang (7 Days / 6 Nights)',
+        image: 'asset/tawang/SelaPass.jpg',
+        itinerary: `
+          <h3>Tour Highlights</h3>
+          <ul>
+            <li>Bomdila- stunning Himalayan views &amp; serene Tibetan Buddhist Monasteries</li>
+            <li>Dirang- Hot Springs, Apple Orchards &amp; historic fort</li>
+            <li>Tawang- Asia's Second Largest Monastery, frozen lake &amp; Waterfalls</li>
+          </ul>
+          
+          <h3>Detailed Itinerary</h3>
+          <div class="itinerary-day">
+            <h4>Day 1: Arrival at Guwahati &amp; Travel to Tawang</h4>
+            <p>Morning/Afternoon: Upon arrival at Guwahati Airport or Railway Station, travel to Bomdila. Evening: Check into your hotels and you can explore the local Bomdila Market.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 2: Explore Bomdila &amp; Dirang</h4>
+            <p>Morning: After breakfast, visit the Bomdila Monastery considered the replica of the Tsona Gontse Monastery in South Tibet, witness the beautiful Nichiphula Waterfall located in a deep valley surrounded by Himalayan Mountains and experience walking on a hanging bridge. Afternoon: Visit the Dirang Dzong Fort centuries old four storey fort offering a glimpse into the historic architecture and witness the naturally occurring Hot Water Springs situated on a hilltop, believed to have medicinal properties known as the Dirang Hot Water Spring. Evening: Visit Dirang Market and check into your hotels for an overnight stay.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 3: Dirang to Tawang</h4>
+            <p>Morning: After breakfast, leave for Tawang. En route: Stop at Sela Lake (at 13,700 ft) known for its deep blue waters in summer and frozen surface in winter. Also, visit Jaswant Garh War Memorial, a memorial in honour of Rifleman Jaswant Singh Rawat who valiantly fought the Chinese Army during 1962 Sino-Indian War. Evening: Check into your hotels for an overnight stay.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 4: Exploring Tawang</h4>
+            <p>Morning: After breakfast, visit the Gaden Namgyal Lhatse Monastery (Tawang Monastery), 'India's Largest Monastery &amp; Asia's Second Largest Monastery.' After which you can visit the Buddha Park it offers a panoramic views of the surrounding hills and at the centerpiece a 30 ft tall gilded statue of the Lord Buddha situated on a hill. Afternoon: You can explore the Local Market. Evening: Witness the Tawang War Memorial where you can see a 40 ft high Buddhist style Stupa honoring 2420 Indian soldiers who died in the 1962 Indo-China War. Sound &amp; Light Shows are also held here which depicts the War's events and sacrifices. The Major Ralengnao Bob Khating Museum is located nearby. Lastly, you can enjoy the cultural programme like the traditional Monpa Dance &amp; the Snow Lion Dance here.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 5: Sangetsar Lake (Madhuri Lake) &amp; Bumla Pass</h4>
+            <p>Morning: After breakfast, set out to visit Bumla Pass it is a historic Sino-Indian Border post famously used by the Dalai Lama to enter India. It offers panoramic views of the Tibetan Plateau. En route: You will witness Sangetsar Lake also known as Madhuri Lake after a song from Koyla movie was shot here. It is a stunning high altitude lake formed by an earthquake in the 1970s, it is renowned for its scenic beauty and partially submerged tree trunks. Evening: Check into your hotel for an overnight stay.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 6: Tawang to Dirang</h4>
+            <p>Morning: Set on your journey to Dirang. En route: Stop at Nuranang Waterfalls (Jang Falls), is a spectacular 100 meter-high waterfall and stop at the scenic Baisakhi, a small high-altitude village and military outpost. Evening: Check into your hotel for an overnight stay at Dirang.</p>
+          </div>
+          
+          <div class="itinerary-day">
+            <h4>Day 7: Dirang to Guwahati</h4>
+            <p>Morning: After breakfast, drive back to Guwahati. En route: Stop at Shergaon, a serene village recognized as the Best Tourism Village (Silver) in 2023. Renowned for it's apple and kiwi orchards, Buddhist Monasteries and the flowing Duflo-Kho stream. Evening: Drop at Guwahati Airport or Railway Station for your onward journey, ending your tour with wonderful memories.</p>
+          </div>
+          
+          <h3>Package Includes</h3>
+          <ul>
+            <li>Accommodation in comfortable hotels, guest house, etc.</li>
+            <li>Meals (Breakfast &amp; Dinner)</li>
+            <li>Transportation</li>
+            <li>English &amp; Hindi speaking guides</li>
+            <li>Parking</li>
+          </ul>
+          
+          <h3>Package Excludes</h3>
+          <ul>
+            <li>Airfare/Train fare</li>
+            <li>Personal expenses</li>
+            <li>Camera fees</li>
+            <li>Entry fees (at chargeable spots)</li>
+            <li>Travel insurance</li>
+            <li>Any additional activities</li>
+          </ul>
+        `
       }
   };
 
@@ -514,7 +582,8 @@ document.addEventListener("DOMContentLoaded", () => {
     meghalaya: "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%20Meghalaya%20Shillong%2C%20Sohra%20(Cherrapunjee)%2C%20Dawki%20and%20Mawlynnong%20(4%20Days%2F5%20Nights)%20Tour.%20Please%20provide%20booking%20details.",
     assam: "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%20Assam%20Guwahati%2C%20Kamakhya%20Temple%2C%20Kaziranga%20National%20Park%20And%20Majuli%20Island%20(4%20Days%2F5%20Nights)%20Tour.%20Please%20provide%20booking%20details.",
     "assam-meghalaya": "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%20Assam%20%26%20Meghalaya%20(4%20Nights%2F5%20Days)%20Tour.%20Please%20provide%20booking%20details.",
-    "assam-arunachal": "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%20Assam%20%26%20Arunachal%20Pradesh%20Tour%20(Kaziranga%2C%20Tawang)%20-%208%20Days%20%2F%207%20Nights.%20Please%20provide%20booking%20details."
+    "assam-arunachal": "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%20Assam%20%26%20Arunachal%20Pradesh%20Tour%20(Kaziranga%2C%20Tawang)%20-%208%20Days%20%2F%207%20Nights.%20Please%20provide%20booking%20details.",
+    "bomdila-dirang-tawang": "https://wa.me/919612763725?text=Hello%20Travel%20Bug%20North%20East!%20I%20am%20interested%20in%20the%20Bomdila%2C%20Dirang%20%26%20Tawang%20(7%20Days%20%2F%206%20Nights)%20Tour.%20Please%20provide%20booking%20details."
   };
 
   function renderTourDetailsHtml(tourId, bookNowUrl) {
