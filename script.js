@@ -420,7 +420,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </ul>
           
           <h3>Package Excludes</h3>
-          <ul>
+          <ul style="margin-bottom: 40px;">
             <li>Airfare/Train fare</li>
             <li>Personal expenses</li>
             <li>Camera fees</li>
@@ -428,6 +428,15 @@ document.addEventListener("DOMContentLoaded", () => {
             <li>Travel insurance</li>
             <li>Any additional activities</li>
           </ul>
+          
+          <div style="background: #e8f5e9; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #2e7d32;">
+            <h3 style="color: #2e7d32;">Best Time to Visit Meghalaya</h3>
+            <p><strong>Ideal Months:</strong> October to May</p>
+            <p><strong>Winter Season (November-January):</strong> Perfect weather with temperatures 8-20°C. Clear skies provide stunning views of waterfalls and valleys. Low rainfall makes it ideal for exploring Cherrapunji, Shillong, and Mawlynnong. Best time for photography and outdoor adventures.</p>
+            <p><strong>Spring Season (February-May):</strong> Pleasant temperatures (15-25°C). Blooming flowers in valleys. Comfortable weather for trekking and sightseeing. Less crowded than winter months.</p>
+            <p><strong>Monsoon Season (June-September):</strong> Warm temperatures (18-24°C) with heavy rainfall. Waterfalls are spectacular but roads are slippery and dangerous. Recommended only for experienced monsoon travelers.</p>
+            <p style="margin-top: 15px; font-weight: bold; color: #2e7d32;">✓ Best Season: October to November (Autumn) offers the most favorable conditions with clear weather, manageable crowds, and excellent visibility for all attractions.</p>
+          </div>
         `
       },
       assam: {
@@ -478,13 +487,22 @@ document.addEventListener("DOMContentLoaded", () => {
           </ul>
           
           <h3>Package Excludes</h3>
-          <ul>
+          <ul style="margin-bottom: 40px;">
             <li>Airfare/Train fare</li>
             <li>Personal expenses</li>
             <li>Camera fees</li>
             <li>Entry fees (at chargeable spots)</li>
             <li>Travel insurance</li>
           </ul>
+          
+          <div style="background: #e8f5e9; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #2e7d32;">
+            <h3 style="color: #2e7d32;">Best Time to Visit Assam</h3>
+            <p><strong>Ideal Months:</strong> October to March</p>
+            <p><strong>Winter Season (November-February):</strong> Perfect weather with temperatures between 10-25°C. Clear skies and minimal rainfall make this the best time for Kaziranga National Park safaris. Wildlife visibility is at its peak with comfortable conditions for outdoor activities.</p>
+            <p><strong>Spring Season (March-May):</strong> Hot but manageable weather (20-32°C). Less ideal for safaris as animals stay near water sources. Still manageable for cultural exploration in Guwahati.</p>
+            <p><strong>Monsoon Season (June-September):</strong> Very hot and humid with temperatures (24-34°C) and heavy rainfall causes flooding and landslides. Roads become difficult to navigate. NOT recommended for Assam tourism. Most tourist activities are suspended during this period.</p>
+            <p style="margin-top: 15px; font-weight: bold; color: #2e7d32;">✓ Best Season: Post-Monsoon Autumn (October-November) offers lush green landscapes with maximum wildlife sightings and pleasant weather.</p>
+          </div>
         `
       },
       'assam-meghalaya': {
@@ -535,13 +553,22 @@ document.addEventListener("DOMContentLoaded", () => {
           </ul>
           
           <h3>Package Excludes</h3>
-          <ul>
+          <ul style="margin-bottom: 40px;">
             <li>Airfare/Train fare</li>
             <li>Personal expenses</li>
             <li>Camera fees</li>
             <li>Entry fees (at chargeable spots)</li>
             <li>Travel insurance</li>
           </ul>
+          
+          <div style="background: #e8f5e9; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #2e7d32;">
+            <h3 style="color: #2e7d32;">Best Time to Visit Assam & Meghalaya</h3>
+            <p><strong>Ideal Months:</strong> October to May</p>
+            <p><strong>Winter Season (November-February):</strong> Perfect weather for Kaziranga safaris with temperatures 10-25°C. Clear skies provide excellent wildlife viewing opportunities. Ideal for both states combined. Best time for this tour combination.</p>
+            <p><strong>Spring Season (March-May):</strong> Warm but manageable temperatures (18-30°C). Blooming flowers in Meghalaya. Good visibility for sightseeing. Slightly crowded during peak tourist season.</p>
+            <p><strong>Monsoon Season (June-September):</strong> Heavy rainfall in both states. Assam experiences flooding risk, Meghalaya becomes extremely wet. Road conditions difficult and dangerous. Wildlife safaris suspended in Kaziranga. NOT recommended.</p>
+            <p style="margin-top: 15px; font-weight: bold; color: #2e7d32;">✓ Best Season: October to November combines wildlife viewing in Assam with pleasant weather in Meghalaya, making it the perfect time for this combined tour.</p>
+          </div>
         `
       },
       'assam-arunachal': {
@@ -608,7 +635,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </ul>
           
           <h3>Package Excludes</h3>
-          <ul>
+          <ul style="margin-bottom: 40px;">
             <li>Airfare/Train fare</li>
             <li>Personal expenses</li>
             <li>Camera fees</li>
@@ -616,6 +643,16 @@ document.addEventListener("DOMContentLoaded", () => {
             <li>Travel insurance</li>
             <li>Any additional activities</li>
           </ul>
+          
+          <div style="background: #e8f5e9; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #2e7d32;">
+            <h3 style="color: #2e7d32;">Best Time to Visit Assam & Arunachal Pradesh</h3>
+            <p><strong>Ideal Months:</strong> October to November</p>
+            <p><strong>Autumn Season (October-November):</strong> Perfect time for this combined tour. Weather is stable with clear sunny days and comfortable temperatures (5-15°C in higher altitudes). Both Kaziranga safaris and Tawang monastery visits are ideal during this period. Clear visibility for mountain views and wildlife sightings.</p>
+            <p><strong>Spring Season (April-June):</strong> Pleasant weather (15-25°C). Good for sightseeing but more rainfall than autumn. Acceptable for both states but not ideal for high-altitude areas.</p>
+            <p><strong>Monsoon Season (June-September):</strong> Heavy rainfall throughout the region. Landslide risks on mountain roads. Kaziranga often experiences flooding. Road closures common. NOT recommended for this tour due to safety concerns.</p>
+            <p><strong>Winter Season (December-March):</strong> Extreme cold with Sela Pass closure due to heavy snowfall. Tawang becomes difficult to access. Only for experienced winter travelers with proper equipment.</p>
+            <p style="margin-top: 15px; font-weight: bold; color: #2e7d32;">✓ Best Season: October to November offers the most favorable conditions for both states, combining wildlife viewing with mountain exploration.</p>
+          </div>
         `
       },
       'bomdila-dirang-tawang': {
@@ -675,15 +712,23 @@ document.addEventListener("DOMContentLoaded", () => {
           </ul>
           
           <h3>Package Excludes</h3>
-          <ul>
+          <ul style="margin-bottom: 40px;">
             <li>Airfare/Train fare</li>
             <li>Personal expenses</li>
             <li>Camera fees</li>
             <li>Entry fees (at chargeable spots)</li>
             <li>Travel insurance</li>
             <li>Any additional activities</li>
-          </ul>
-        `
+          </ul>          
+          <div style="background: #e8f5e9; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #2e7d32;">
+            <h3 style="color: #2e7d32;">Best Time to Visit Tawang</h3>
+            <p><strong>Ideal Months:</strong> September to November, April to June</p>
+            <p><strong>Autumn Season (September-November - BEST):</strong> Absolutely perfect time. Weather is clear and stable. Temperatures range from 5-15°C. Visibility is outstanding for mountain views and monastery sightseeing. Roads are safe and accessible. Moderate tourist crowds. Ideal for all outdoor activities.</p>
+            <p><strong>Spring Season (April-June - GOOD):</strong> Pleasant weather 5-15°C. Good visibility. Wildflowers bloom in valleys. Roads are open and accessible. Higher tourist crowds during peak season.</p>
+            <p><strong>Summer Season (Jun–Sep - MODERATE):</strong> Temperatures 10-20°C with occasional rainfall. Roads remain accessible. Lush green landscapes. More rainfall than spring but manageable.</p>
+            <p><strong>Winter Season (December-March - RISKY):</strong> Extremely cold (-5 to 10°C at higher altitudes). Sela Pass closure due to heavy snowfall. Difficult road conditions. Only accessible for experienced winter travelers with proper equipment.</p>
+            <p style="margin-top: 15px; font-weight: bold; color: #2e7d32;">✓ Best Season: Autumn (September-November) offers the most favorable conditions with clear weather, excellent visibility, safe roads, and perfect temperatures for exploring Tawang's monasteries and natural beauty.</p>
+          </div>        `
       }
   };
 
@@ -730,10 +775,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const tourPlanDetails = document.getElementById('tourPlanDetails');
   if (tourPlanDetails) {
     const params = new URLSearchParams(window.location.search);
-    const tourId =
+    let tourId =
       params.get('tour') ||
       document.body.getAttribute('data-tour') ||
       null;
+    
+    // If tourId not found, extract from current page filename
+    if (!tourId) {
+      const currentPage = window.location.pathname.split('/').pop();
+      const pageNameWithoutExt = currentPage.replace('.html', '');
+      if (tourData[pageNameWithoutExt]) {
+        tourId = pageNameWithoutExt;
+      }
+    }
+    
     if (tourId && tourData[tourId]) {
       const bookNowUrl = tourBookingLinks[tourId] || '#';
       tourPlanDetails.innerHTML = renderTourDetailsHtml(tourId, bookNowUrl);
