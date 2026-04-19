@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "asset/meghalaya/meghalayafall1.jpg",
     "asset/meghalaya/meghalayahill.jpg", 
     "asset/meghalaya/RootBridge.jpg",
-    "asset/meghalaya/SevenSisterFalls.png",
+    "asset/meghalaya/SevenSisterFalls.jpg",
     "asset/assam/KazirangaNationalPark.jpg", 
     "asset/assam/brahmaputra2.jpg",  
     "asset/tawang/TawangVillage2.jpg",
